@@ -1,2 +1,5 @@
 # H-Bridge
-Simulating and Making a Full H-Bridge circuit
+An H-Bridge is a versatile power electronics circuit that can act as a DC-DC converter when used with pulse-width modulation and filtering, enabling voltage regulation or speed control. As a DC-AC inverter, it switches a DC input in alternating patterns to produce an AC output, commonly used in motor drives and inverters. In AC-DC conversion, the H-Bridge—when combined with rectifiers and filters—can control power flow and enable active rectification. Additionally, in AC-AC conversion, it facilitates frequency or voltage modulation by chopping and reconstructing the waveform, useful in variable frequency drives. 
+It is used to control the direction of current through a load, most commonly a DC motor. It consists of four switches (typically MOSFETs) arranged in an “H” configuration that allows current to flow in either direction through the motor, enabling it to rotate both clockwise and counterclockwise. By toggling these switches in different combinations, the H-Bridge can start, stop, reverse, or brake the motor
+
+Mosfets were drived using mosfet driver circuit which were given the high and low pulses from a microcontroller. We ensured that the microcontroller provided a dead time in order to make sure that the mosfets do not close and short the power supply. 
